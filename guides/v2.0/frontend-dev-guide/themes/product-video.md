@@ -71,7 +71,7 @@ Boolean
   </tbody>
 </table>
 
-The options are set in the `config.xml` of you custom module. 
+The options are set in the `config.xml` of your custom module. 
 
 Example:
 
@@ -89,4 +89,4 @@ Example:
 </config>
 {%endhighlight%}
 
-For the sake of compatibility, upgradability and easy maintenance, do not edit the default Magento code. Instead add your customizations in a separate module.
+For the sake of compatibility, upgradability, and maintainability, do not edit the default Magento code. Instead add your customizations in a separate module.
