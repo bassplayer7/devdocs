@@ -100,7 +100,7 @@ imports: {
 }
 ```
 
-When the Element class initializes, it will process the link that was declared in `imports`. Remember that one of the first things Magento does is process string literals, though, so it is actually working with something that looks more like the following (where `example` is the Component Name for clarity):
+When the Element class initializes, it will process the link that was declared in `imports`. Remember that one of the first things Magento does is process string literals, though, so it is actually working with something that looks more like the following (where `example` is the UI Component Name for clarity):
 
 ```
 imports: {
@@ -110,4 +110,4 @@ imports: {
 
 The `:` is a special separator that is used to divide the component name that it is to link to and the values it should access in the returned value. No `:` is necessary, though, and the expression, `$.provider` could be any key that was passed into the javascript configuration. 
 
-In the example above, it will return the `totalRecords` property of the `data` object in the `example.example_data_source` component. As a result of these connections, `{{totalRecords}}` will display the output of `DataProvider::getData()`.
+In the example above, it will return the `totalRecords` property of the `data` object in the `example.example_data_source` component. As a result of these connections, `totalRecords` will display the output of `DataProvider::getData()`.
